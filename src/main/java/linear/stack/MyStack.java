@@ -17,16 +17,20 @@ public class MyStack{
   private int pop(){
     if(top == null ) throw new EmptyStackException();
     //Remove last node
+    //System.out.println("POP Top:: "+top.data);
     int data = top.data;
     //Assign second last to top top = ?
     top = top.next;
+    //System.out.println("POP Top:: "+top.data);
     return data;
   }
 
   private void push(int data){
     StackNode node = new StackNode(data);
     node.next = top;
+    //if (top != null) System.out.println("PUSH Top :: "+top.data);
     top = node;
+    //System.out.println("PUSH Top :: "+top.data);
   }
 
   private int peek(){
