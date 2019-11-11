@@ -1,4 +1,4 @@
-package stacks;
+package linear.stack;
 
 import java.util.EmptyStackException;
 

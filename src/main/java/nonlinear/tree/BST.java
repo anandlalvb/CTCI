@@ -1,4 +1,4 @@
-package trees;
+package nonlinear.tree;
 
 import java.io.*;
 import java.util.*;
@@ -10,8 +10,21 @@ import java.util.*;
  * If you need more classes, simply define them inline.
  */
 
+ class Node {
+       int data;
+       Node left;
+       Node right;
+
+       public Node(int num) {
+         this.data = num;
+         this.left = null;
+         this.right = null;
+       }
+
+}
+
 class BST {
-  public static void main(String[] args) {
+public static void main(String[] args) {
 
     BST sol = new BST();
 
@@ -123,20 +136,6 @@ class BST {
 
 
 }
-
-class Node {
-      int data;
-      Node left;
-      Node right;
-
-      public Node(int num) {
-        this.data = num;
-        this.left = null;
-        this.right = null;
-      }
-
-    }
-
 
 /*
 Your previous Plain Text content is preserved below:

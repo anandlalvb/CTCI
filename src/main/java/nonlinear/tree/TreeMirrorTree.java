@@ -1,4 +1,4 @@
-package trees;
+package nonlinear.tree;
 import java.io.*;
 import java.util.*;
 
@@ -6,6 +6,15 @@ import java.util.*;
 * This Class helps to check whether a tree in Symmetric (Mirron) or not
 *
 */
+
+class TreeNode{
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x){
+      val = x;
+    }
+}
 
 class TreeMirrorTree {
   public static void main(String[] args) {
@@ -78,12 +87,3 @@ class TreeMirrorTree {
 
 
 }
-
-class TreeNode{
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x){
-      val = x;
-    }
-  }

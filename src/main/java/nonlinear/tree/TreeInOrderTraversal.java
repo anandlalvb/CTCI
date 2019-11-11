@@ -1,11 +1,20 @@
-package trees;
+package nonlinear.tree;
 import java.io.*;
 import java.util.*;
 
 /**
-* This Class helps to check whether a tree in Symmetric (Mirron) or not
+* This Class helps to check whether a tree in Symmetric (Mirror) or not
 *
 */
+
+class TreeNode{
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x){
+      val = x;
+    }
+}
 
 class TreeInOrderTraversal {
   public static void main(String[] args) {
@@ -40,6 +49,9 @@ class TreeInOrderTraversal {
     inOrderTraversal(t2);
   }
 
+  /**
+  * inOrderTraversal using Recursion
+  */
   public static void inOrderTraversal(TreeNode a){
 
     //If root element is null it is Symmetric
@@ -55,12 +67,3 @@ class TreeInOrderTraversal {
 
 
 }
-
-class TreeNode{
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x){
-      val = x;
-    }
-  }

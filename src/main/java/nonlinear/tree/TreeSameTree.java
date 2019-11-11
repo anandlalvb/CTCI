@@ -1,4 +1,4 @@
-package trees;
+package nonlinear.tree;
 import java.io.*;
 import java.util.*;
 
@@ -8,6 +8,15 @@ import java.util.*;
  *
  * If you need more classes, simply define them inline.
  */
+
+ class TreeNode{
+     int val;
+     TreeNode left;
+     TreeNode right;
+     TreeNode(int x){
+       val = x;
+     }
+}
 
 class TreeSameTree {
   public static void main(String[] args) {
@@ -64,12 +73,3 @@ class TreeSameTree {
 
 
 }
-
-class TreeNode{
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x){
-      val = x;
-    }
-  }
